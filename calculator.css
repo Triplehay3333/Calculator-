@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  background:url('image.png');
+  background-size:cover;
+}
+
+.calculator {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  width: 88%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height:30%;
+}
+
+.operations button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height:20%;
+  width:20%;
+}
+
+.operations button:hover {
+  background: #0056b3;
+}
+
+.result h2 {
+  color: #555;
+}
+#num1{
+  height:60%;
+  width:45%;
+  border: 2px solid #062863
+}
+#num2{
+  height:60%;
+  width:45%;
+  border: 2px solid #062863
+}
+.operations button:hover{
+   background-color:#062863;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .inputs input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .operations button {
+    width: 100%; /* One button per row on very small screens */
+    margin-bottom: 10px;
+  }
+
+  .result h2 {
+    font-size: 1rem;
+  }
+}
